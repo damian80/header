@@ -4,10 +4,70 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: arial;
+}
+
 header {
+    position: relative;
     height: 100vh;
     background-image: url(bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+header>* {
+    position: absolute;
+}
+
+header img {
+    top: 30px;
+    left: 60px;
+}
+
+header h1 {
+    top: 45%;
+    font-size: 60px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+}
+
+header button {
+    bottom: 80px;
+    right: 80px;
+    font-size: 40px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: solid 4px white;
+    transition: .3s;
+    outline: none;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+section {
+    width: 86%;
+    margin: 80px auto 0;
+}
+
+section p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+    background-size: cover;
 }
